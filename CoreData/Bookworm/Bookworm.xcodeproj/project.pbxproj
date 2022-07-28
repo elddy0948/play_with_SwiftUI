@@ -11,6 +11,9 @@
 		B49C45B228925AD300036006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C45B128925AD300036006 /* ContentView.swift */; };
 		B49C45B428925AD300036006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49C45B328925AD300036006 /* Assets.xcassets */; };
 		B49C45B728925AD300036006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49C45B628925AD300036006 /* Preview Assets.xcassets */; };
+		B49C45BF2892606600036006 /* Boorworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B49C45BD2892606600036006 /* Boorworm.xcdatamodeld */; };
+		B49C45C12892615B00036006 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C45C02892615B00036006 /* DataController.swift */; };
+		B49C45C32892672900036006 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C45C22892672900036006 /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		B49C45B128925AD300036006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B49C45B328925AD300036006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49C45B628925AD300036006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B49C45BE2892606600036006 /* Boorworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Boorworm.xcdatamodel; sourceTree = "<group>"; };
+		B49C45C02892615B00036006 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B49C45C22892672900036006 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				B49C45B128925AD300036006 /* ContentView.swift */,
 				B49C45B328925AD300036006 /* Assets.xcassets */,
 				B49C45B528925AD300036006 /* Preview Content */,
+				B49C45BD2892606600036006 /* Boorworm.xcdatamodeld */,
+				B49C45C02892615B00036006 /* DataController.swift */,
+				B49C45C22892672900036006 /* AddBookView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49C45B228925AD300036006 /* ContentView.swift in Sources */,
+				B49C45C12892615B00036006 /* DataController.swift in Sources */,
 				B49C45B028925AD300036006 /* BookwormApp.swift in Sources */,
+				B49C45BF2892606600036006 /* Boorworm.xcdatamodeld in Sources */,
+				B49C45C32892672900036006 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B49C45BD2892606600036006 /* Boorworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B49C45BE2892606600036006 /* Boorworm.xcdatamodel */,
+			);
+			currentVersion = B49C45BE2892606600036006 /* Boorworm.xcdatamodel */;
+			path = Boorworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B49C45A428925AD300036006 /* Project object */;
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B42F8DFB289CDBB3003E88C3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F8DFA289CDBB3003E88C3 /* DataController.swift */; };
+		B42F8E00289CE804003E88C3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42F8DFF289CE804003E88C3 /* CloudKit.framework */; };
 		B4A401EF2898EBD3004BF22C /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4A401ED2898EBD3004BF22C /* Main.xcdatamodeld */; };
 		B4B1DD7C288FBEA20076F87A /* UltimateHWSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1DD7B288FBEA20076F87A /* UltimateHWSApp.swift */; };
 		B4B1DD7E288FBEA20076F87A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1DD7D288FBEA20076F87A /* ContentView.swift */; };
@@ -17,6 +18,9 @@
 
 /* Begin PBXFileReference section */
 		B42F8DFA289CDBB3003E88C3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B42F8DFC289CE7DB003E88C3 /* UltimateHWS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimateHWS.entitlements; sourceTree = "<group>"; };
+		B42F8DFD289CE7E7003E88C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B42F8DFF289CE804003E88C3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		B4A401EE2898EBD3004BF22C /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		B4B1DD78288FBEA20076F87A /* UltimateHWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateHWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B1DD7B288FBEA20076F87A /* UltimateHWSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateHWSApp.swift; sourceTree = "<group>"; };
@@ -30,17 +34,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42F8E00289CE804003E88C3 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B42F8DFE289CE804003E88C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B42F8DFF289CE804003E88C3 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4B1DD6F288FBEA20076F87A = {
 			isa = PBXGroup;
 			children = (
 				B4B1DD7A288FBEA20076F87A /* UltimateHWS */,
 				B4B1DD79288FBEA20076F87A /* Products */,
+				B42F8DFE289CE804003E88C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +69,8 @@
 		B4B1DD7A288FBEA20076F87A /* UltimateHWS */ = {
 			isa = PBXGroup;
 			children = (
+				B42F8DFD289CE7E7003E88C3 /* Info.plist */,
+				B42F8DFC289CE7DB003E88C3 /* UltimateHWS.entitlements */,
 				B4B1DD7D288FBEA20076F87A /* ContentView.swift */,
 				B4B1DD7B288FBEA20076F87A /* UltimateHWSApp.swift */,
 				B4B1DD7F288FBEA20076F87A /* Assets.xcassets */,
@@ -272,12 +288,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimateHWS/UltimateHWS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimateHWS/Preview Content\"";
 				DEVELOPMENT_TEAM = SK9D9HK9A2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimateHWS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,12 +319,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimateHWS/UltimateHWS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimateHWS/Preview Content\"";
 				DEVELOPMENT_TEAM = SK9D9HK9A2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimateHWS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

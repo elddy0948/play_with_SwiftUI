@@ -16,12 +16,29 @@ struct ProjectView: View {
   }
   
   var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    NavigationView {
+      List {
+        ForEach(projects.wrappedValue) { project in
+          Section(content: {
+            ForEach(project.items?.allObjects as? [Item] ?? []) { item in
+              Text(item.title ?? "")
+            }
+          }, header: {Text(project.title ?? "")})
+          
+        }
+      }
+      .listStyle(InsetGroupedListStyle())
+      .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
+    }
   }
 }
 
 struct ProjectView_Previews: PreviewProvider {
+  static var dataController = DataController.preview
+  
   static var previews: some View {
     ProjectView(showClosedProjects: false)
+      .environment(\.managedObjectContext, dataController.container.viewContext)
+      .environmentObject(dataController)
   }
 }
